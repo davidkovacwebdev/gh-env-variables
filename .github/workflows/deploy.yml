@@ -2,14 +2,14 @@ name: Deployment
 on:
   push:
     branches:
-      - master
+      - main
       - dev
 env:
   MONGODB_DB_NAME:  gha-demo #MONGODB_DB_NAME iz data/database.js se izvlaci. gha-demo nazivamo kako ocemo. env yml linija zadaje varijable pristupne svim poslovima u workflowu
 jobs:
   test:
     env:
-      MONGODBB_CLUSTER_ADDRESS:  cluster0.jk3uqdc.mongodb.net
+      MONGODB_CLUSTER_ADDRESS:  cluster0.jk3uqdc.mongodb.net
       MONGODB_USERNAME: admin
       MONGODB_PASSWORD:  admin
       PORT: 8080
