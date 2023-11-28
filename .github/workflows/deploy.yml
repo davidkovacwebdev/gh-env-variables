@@ -9,7 +9,7 @@ env:
 jobs:
   test:
     env:
-      MONGODB_CLUSTER_ADDRESS:  cluster0.jk3uqdc.mongodb.net
+      MONGODBB_CLUSTER_ADDRESS:  cluster0.jk3uqdc.mongodb.net
       MONGODB_USERNAME: admin
       MONGODB_PASSWORD:  admin
       PORT: 8080
