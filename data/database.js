@@ -9,6 +9,9 @@ const uri = `mongodb+srv://${dbUser}:${dbPassword}@${clusterAddress}/?retryWrite
 const client = new MongoClient(uri);
 
 console.log('Trying to connect to db');
+console.log(dbPassword)
+console.log(dbName)
+
 
 try {
   await client.connect();
